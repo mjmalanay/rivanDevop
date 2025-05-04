@@ -68,7 +68,7 @@ config t
 no event manager applet siraloop
 event manager applet siraloop
  event none
- action 1.0 puts "How many Loopback interfaces do you wish to create?"
+ action 1.0 puts "How many Loopback interfaces do you wish to remove?"
  action 1.1 puts nonewline "> "
  action 1.2 gets num 
  action 2.0 cli command "enable"
@@ -81,7 +81,7 @@ event manager applet siraloop
  action 4.0 cli command "end"
  end
 
-event manager run RemoveLoopbacks
+event manager run siraloop
 
 @@@@@@@ example4 @@@@@@@@@
 
